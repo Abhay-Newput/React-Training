@@ -1,6 +1,10 @@
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Home from "./components/Home";
+import About from "./components/About";
+import Conatct from "./components/Conatct";
+import Service from "./components/Service";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -34,7 +38,10 @@ function App() {
       )}
 
       <div>
-        <h2>{menu ? selectedTopic : ""}</h2>
+        {selectedTopic === "home" && <Home />}
+        {selectedTopic === "about" && <About />}
+        {selectedTopic === "contact" && <Conatct />}
+        {selectedTopic === "service" && <Service />}
       </div>
     </div>
   );
