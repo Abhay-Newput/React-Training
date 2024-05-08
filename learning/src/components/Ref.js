@@ -3,7 +3,7 @@ import * as React from "react";
 
 const Ref = () => {
   // Creating textInputRef variable
-  const textInputCreateRef = React.createRef(); // using CreateRef..
+  // const textInputCreateRef = React.createRef(); // using CreateRef..
   const textInputUseRef = React.useRef(null);
 
   // This method will be used to focus textInput
