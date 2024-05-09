@@ -7,7 +7,7 @@ import Ref from "./components/Ref";
 import Memo from "./components/Memo";
 import Home from "./components/Navigation/Home";
 
-// import ParentComponent from "./components/contextAPI/ParentComponent";
+import ParentComponent from "./components/contextAPI/ParentComponent";
 
 function App() {
   return (
@@ -44,13 +44,13 @@ function App() {
           <Route path="/my-component" element={<MyComponent name="hehe" />} />
         </Routes>
         <Home />
+        <ParentComponent />
       </div>
     </Router>
   );
 
   // return (
   //   <>
-  //     <ParentComponent />
   //   </>
   // );
 }
