@@ -8,6 +8,7 @@ import Memo from "./components/Memo";
 import Home from "./components/Navigation/Home";
 
 import ParentComponent from "./components/contextAPI/ParentComponent";
+import CounterPage from "./components/useReducer/CounterPage";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Home />
         <ParentComponent />
       </div>
+      <CounterPage initialCount={30} />
     </Router>
   );
 
